@@ -1,0 +1,45 @@
+---
+
+---
+
+<header
+  id="nav-menu"
+  class="w-full fixed top-0 h-[15vh] flex justify-around items-center bg-transparent z-50"
+>
+  <figure class="hidden md:block">
+    <img
+      class="w-32"
+      src="/precco-little.png"
+      alt="Logotipo de precco"
+    />
+  </figure>
+
+  <figure class="md:hidden">
+    <img class="w-48" src="/precco.png" alt="Logotipo de precco" />
+  </figure>
+
+  <ul class="hidden md:flex gap-5">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="#Ventajas">Ventajas</a></li>
+    <li><a href="#IA">IA</a></li>
+  </ul>
+
+  <ul class="hidden md:flex gap-5">
+    <li>Linkedin</li>
+    <li>GitHub</li>
+  </ul>
+</header>
+
+<style>
+  #nav-menu {
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 300px;
+  }
+
+  @keyframes blur {
+    to {
+      backdrop-filter: blur(35px);
+    }
+  }
+</style>
