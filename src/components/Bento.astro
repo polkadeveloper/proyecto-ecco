@@ -1,3 +1,69 @@
-<section class="h-screen">
+---
+import BentoItem from './BentoItem.astro'
+---
 
+<section class="h-screen">
+  <article
+    class="w-full max-w-[1200px] grid grid-cols-10 gap-4 auto-rows-[25rem] mx-auto p-2"
+  >
+    <!-- IMAGEN GRID COMUNIDAD SOSTENIBLE -->   
+    <BentoItem class="col-span-10 md:col-span-5" title='Comunidad Sostenible' description='El Eco-Urbanismo Integrado combina fachadas y tejados verdes con una arquitectura eco-compatible, creando un entorno urbano sostenible y en armonía con la naturaleza.'>
+      <div
+        slot="image"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        style="background-image: url(/comunidad-sostenible.png);"
+      >
+      </div>
+    </BentoItem>
+
+    <!-- IMAGEN GRID ENTRADA -->
+    <BentoItem class="col-span-10 md:col-span-5" title='Luminosidad y Amplitud' description='Este proyecto incorpora amplias entradas con placas solares en los tejados para ofrecer iluminación sostenible y eficiente, realzando el espacio y la armonía del entorno.'>
+      <div
+        slot="image"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        style="background-image: url(/entrada.png);"
+      >
+      </div>
+    </BentoItem>
+
+    <!-- IMAGEN GRID BICIS ELÉCTRICAS -->
+    <BentoItem class="col-span-10 md:col-span-4" title='Transporte' description='Ofrecemos bicicletas eléctricas accesibles para inquilinos, promoviendo la movilidad sostenible y un estilo de vida respetuoso con el medio ambiente.'>
+      <div
+        slot="image"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        style="background-image: url(/bicis-electricas.png);"
+      >
+      </div>
+    </BentoItem>
+
+    <!-- IMAGEN GRID INTERIOR -->
+    <BentoItem class="col-span-10 md:col-span-6" title='Interior'>
+      <div
+        slot="image"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        style="background-image: url(/interior.png);"
+      >
+      </div>
+    </BentoItem>
+
+    <!-- IMAGEN GRID PANEL SOLAR -->
+    <BentoItem class="col-span-10 md:col-span-6" title='Panel Solar'>
+      <div
+        slot="image"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        style="background-image: url(/panel-solar.png);"
+      >
+      </div>
+    </BentoItem>
+
+    <!-- IMAGEN GRID PAPELERAS RECICLABLES -->
+    <BentoItem class="col-span-10 md:col-span-4" title='Papelera Reciclables'>
+      <div
+        slot="image"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        style="background-image: url(/papeleras.png);"
+      >
+      </div>
+    </BentoItem>
+  </article>
 </section>
