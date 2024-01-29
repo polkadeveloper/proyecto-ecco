@@ -1,54 +1,23 @@
-# Astro Starter Kit: Basics
+# Proyecto ECCO: Modelando Ciudades y Comunidades Sostenibles para el Objetivo 11 de la Agenda 2030
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido a ECCO (Entorno de Comunidades y Ciudades Sostenibles), un proyecto apasionante que busca proponer un innovador modelo de urbanización y comunidad sostenible en consonancia con el Objetivo 11 de la Agenda 2030 de las Naciones Unidas: "Ciudades y Comunidades Sostenibles".
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Objetivo
+Nuestro objetivo es abordar los desafíos actuales en el desarrollo urbano mediante la creación de un enfoque integral y sostenible. ECCO aspira a ser una fuente de inspiración y referencia para diseñadores urbanos, arquitectos, planificadores y comunidades interesadas en adoptar prácticas que promuevan la sostenibilidad y la calidad de vida.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Características Principales
+- **Diseño Sostenible:** Exploramos técnicas innovadoras de diseño urbano que minimizan el impacto ambiental y fomentan la resiliencia.
+- **Eficiencia Energética:** Integración de soluciones para la reducción del consumo energético y la adopción de fuentes renovables.
+- **Participación Comunitaria:** Enfoque en la creación de comunidades inclusivas y participativas, donde los residentes son parte activa en la toma de decisiones.
+- **Tecnología Inteligente:** Implementación de tecnologías modernas para mejorar la eficiencia, seguridad y calidad de vida.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Contribuciones
+¡Únete a nosotros! Este repositorio está abierto a colaboradores de diversas disciplinas. Si tienes ideas, soluciones o contribuciones técnicas, ¡nos encantaría escucharte!
 
-## 🚀 Project Structure
+## Documentación
+Encontrarás documentación detallada, visualizaciones y modelos que respaldan la propuesta de ECCO. Aprende sobre nuestras ideas, metodologías y posibles implementaciones.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Inspiración
+Nuestra inspiración es la Agenda 2030 de las Naciones Unidas, específicamente el Objetivo 11. Creemos en el poder de la colaboración para transformar nuestras ciudades y comunidades en lugares más sostenibles y habitables para las generaciones futuras.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+¡Únete a nosotros en el viaje hacia un futuro urbano más sostenible con ECCO!
