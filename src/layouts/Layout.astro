@@ -1,51 +1,78 @@
 ---
+import FondoBolaRosa from '../components/FondoBolaRosa.astro';
+import FondoCuadros from '../components/FondoCuadros.astro';
+import FondoU from '../components/FondoU.astro';
+import FondoBolaCentro from '../components/FondoBolaCentro.astro';
+
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<FondoCuadros>
+			<slot />
+		</FondoCuadros>
+			
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
+
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: 'Geist Medium', system-ui, sans-serif;
+		font-size: 1.2rem;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	@font-face {
+		font-family: 'Geist Light';
+		src: url(/node_modules/geist/dist/geist-sans/geist-light.woff2) format('woff2'),
+			url(/fonts/Geist/Geist-Light.woff) format('woff');
+	}
+
+	.geist-light {
+		font-family: 'Geist Light', system-ui, sans-serif;
+	}
+
+	@font-face {
+		font-family: 'Geist Medium';
+		src: url(/node_modules/geist/dist/geist-sans/geist-medium.woff2) format('woff2'),
+			url(/fonts/Geist/Geist-Medium.woff) format('woff');
+	}
+
+	.geist-medium {
+		font-family: 'Geist Medium', system-ui, sans-serif;
+	}
+
+	@font-face {
+		font-family: 'Geist Regular';
+		src: url(/node_modules/geist/dist/geist-sans/geist-regular.woff2) format('woff2'),
+			url(/fonts/Geist/Geist-Regular.woff) format('woff');
+	}
+
+	.geist-regular {
+		font-family: 'Geist Regular', system-ui, sans-serif;
+	}
+
+	@font-face {
+		font-family: 'Geist Bold';
+		src: url(/node_modules/geist/dist/geist-sans/geist-bold.woff2) format('woff2'),
+			url(/fonts/Geist/Geist-Bold.woff) format('woff');
+	}
+
+	.geist-bold {
+		font-family: 'Geist Bold', system-ui, sans-serif;
 	}
 </style>
