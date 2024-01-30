@@ -2,7 +2,8 @@
 import BentoItem from './BentoItem.astro'
 ---
 
-<section class="h-screen">
+<!-- TODO: AÑADIR SCALE A CADA BENTO ITEM -->
+<section>
   <article
     class="w-full max-w-[1200px] grid grid-cols-10 gap-4 auto-rows-[25rem] mx-auto p-2"
   >
@@ -57,7 +58,7 @@ import BentoItem from './BentoItem.astro'
     </BentoItem>
 
     <!-- IMAGEN GRID PAPELERAS RECICLABLES -->
-    <BentoItem class="col-span-10 md:col-span-4" title='Reciclaje Eficiente'>
+    <BentoItem class="col-span-10 md:col-span-4" title='Reciclaje Eficiente' description='Un sistema en las viviendas facilita el reciclaje sin salir de casa, centralizando la basura a través de conductos internos y llevándola a un punto común para su limpieza.'>
       <div
         slot="image"
         class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
