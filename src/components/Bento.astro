@@ -2,69 +2,99 @@
 import BentoItem from './BentoItem.astro'
 ---
 
-<!-- TODO: AÑADIR SCALE A CADA BENTO ITEM -->
 <section>
   <article
-    class="w-full max-w-[1200px] grid grid-cols-10 gap-4 auto-rows-[25rem] mx-auto p-2"
+    class="w-full max-w-[1200px] grid grid-cols-10 gap-4 auto-rows-[25rem] mx-auto p-2 md:p-12 lg:p-8 mb-44"
   >
-    <!-- IMAGEN GRID COMUNIDAD SOSTENIBLE -->   
-    <BentoItem class="col-span-10 md:col-span-5" title='Comunidad Sostenible' description='El Eco-Urbanismo Integrado combina fachadas y tejados verdes con una arquitectura eco-compatible, creando un entorno urbano sostenible y en armonía con la naturaleza.'>
+    <!-- IMAGEN GRID COMUNIDAD SOSTENIBLE -->
+    <BentoItem
+      class="col-span-10 lg:col-span-5 group-left"
+      title="Comunidad Sostenible"
+      description="El Eco-Urbanismo Integrado combina fachadas y tejados verdes con una arquitectura eco-compatible, creando un entorno urbano sostenible y en armonía con la naturaleza."
+    >
       <div
         slot="image"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        transition-scale duration-1000 ease-in-out group-hover:scale-110 opacity-90 bg-blend-luminosity"
         style="background-image: url(/comunidad-sostenible.png);"
       >
       </div>
     </BentoItem>
 
     <!-- IMAGEN GRID ENTRADA -->
-    <BentoItem class="col-span-10 md:col-span-5" title='Luminosidad y Amplitud' description='La iluminación moderna en la entrada de nuestra urbanización crea un ambiente seguro y elegante para todos los residentes, reflejando nuestro enfoque contemporáneo.'>
+    <BentoItem
+      class="col-span-10 lg:col-span-5 group-right"
+      title="Luminosidad y Amplitud"
+      description="La iluminación moderna en la entrada de nuestra urbanización crea un ambiente seguro y elegante para todos los residentes, reflejando nuestro enfoque contemporáneo."
+    >
       <div
         slot="image"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        transition-scale duration-1000 ease-in-out group-hover:scale-110 opacity-90 bg-blend-luminosity"
         style="background-image: url(/entrada.png);"
       >
       </div>
     </BentoItem>
 
     <!-- IMAGEN GRID BICIS ELÉCTRICAS -->
-    <BentoItem class="col-span-10 md:col-span-4" title='Transporte' description='Ofrecemos bicicletas eléctricas accesibles para inquilinos, promoviendo la movilidad sostenible y un estilo de vida respetuoso con el medio ambiente.'>
+    <BentoItem
+      class="col-span-10 lg:col-span-4 group-left"
+      title="Transporte"
+      description="Ofrecemos bicicletas eléctricas accesibles para inquilinos, promoviendo la movilidad sostenible y un estilo de vida respetuoso con el medio ambiente."
+    >
       <div
         slot="image"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        transition-scale duration-1000 ease-in-out group-hover:scale-110 opacity-90 bg-blend-luminosity"
         style="background-image: url(/bicis-electricas.png);"
       >
       </div>
     </BentoItem>
 
     <!-- IMAGEN GRID INTERIOR -->
-    <BentoItem class="col-span-10 md:col-span-6" title='Hall Central' description='El hall ofrece comodidad y un ascensor de fácil acceso situado en el centro de la urbanización.'>
+    <BentoItem
+      class="col-span-10 lg:col-span-6 group-right"
+      title="Hall Central"
+      description="El hall ofrece comodidad y un ascensor de fácil acceso situado en el centro de la urbanización."
+    >
       <div
         slot="image"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        transition-scale duration-1000 ease-in-out group-hover:scale-110 opacity-90 bg-blend-luminosity"
         style="background-image: url(/interior.png);"
       >
       </div>
     </BentoItem>
 
     <!-- IMAGEN GRID PANEL SOLAR -->
-    <BentoItem class="col-span-10 md:col-span-6" title='Tejados Solares' description='La instalación de placas solares en los tejados llevada a cabo para respaldar la energía renovable y convertir nuestra urbanización en un modelo de sostenibilidad energética.'>
+    <BentoItem
+      class="col-span-10 lg:col-span-6 group-left"
+      title="Tejados Solares"
+      description="La instalación de placas solares en los tejados llevada a cabo para respaldar la energía renovable y convertir nuestra urbanización en un modelo de sostenibilidad energética."
+    >
       <div
         slot="image"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        transition-scale duration-1000 ease-in-out group-hover:scale-110 opacity-90 bg-blend-luminosity"
         style="background-image: url(/panel-solar.png);"
       >
       </div>
     </BentoItem>
 
     <!-- IMAGEN GRID PAPELERAS RECICLABLES -->
-    <BentoItem class="col-span-10 md:col-span-4" title='Reciclaje Eficiente' description='Un sistema en las viviendas facilita el reciclaje sin salir de casa, centralizando la basura a través de conductos internos y llevándola a un punto común para su limpieza.'>
+    <BentoItem
+      class="col-span-10 lg:col-span-4 group-right"
+      title="Reciclaje Eficiente"
+      description="Un sistema en las viviendas facilita el reciclaje sin salir de casa, centralizando la basura a través de conductos internos y llevándola a un punto común para su limpieza."
+    >
       <div
         slot="image"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        transition-scale duration-1000 ease-in-out group-hover:scale-110 opacity-90 bg-blend-luminosity"
         style="background-image: url(/papeleras.png);"
       >
       </div>
     </BentoItem>
   </article>
 </section>
+
