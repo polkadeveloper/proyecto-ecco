@@ -1,7 +1,7 @@
 ---
 interface Props {
   class?: string
-  title: string,
+  title: string
   description?: string
 }
 
@@ -11,13 +11,15 @@ const { title, description } = Astro.props
 <article
   class={`
 ${Astro.props.class}
-relative rounded-xl backdrop-blur-md border border-black/20 shadow inner shadow-green-300 overflow-hidden `}
+relative rounded-xl backdrop-blur-md border
+ border-black/20 overflow-hidden
+ group`}
 >
-
-<!-- Fondo degradado en negro -->
-<div class="absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-35% via-black/50 to-black">
-
-</div>
+  <!-- Fondo degradado en negro -->
+  <div
+    class="absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-35% via-black/50 to-black"
+  >
+  </div>
   <div class="absolute bottom-2 left-0 z-50 text-white px-2 md:px-3">
     <p class="text-xl md:text-2xl">{title}</p>
     <p class="text-sm text-pretty">{description}</p>
@@ -25,3 +27,58 @@ relative rounded-xl backdrop-blur-md border border-black/20 shadow inner shadow-
 
   <slot name="image" />
 </article>
+
+<style>
+
+  @keyframes move-right {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+      visibility: hidden;
+  
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes move-left {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+      visibility: hidden;
+  
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @media(width>=768px){
+    .group-left {
+    view-timeline-name: --text;
+    view-timeline-axis: block;
+    animation-timeline: --text;
+    animation-name: move-right;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+
+  .group-right {
+    view-timeline-name: --text;
+    view-timeline-axis: block;
+    animation-timeline: --text;
+    animation-name: move-left;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  }
+
+  
+</style>
