@@ -29,13 +29,11 @@ relative rounded-xl backdrop-blur-md border
 </article>
 
 <style>
-
   @keyframes move-right {
     from {
       transform: translateX(-40px);
       opacity: 0;
       visibility: hidden;
-  
     }
     to {
       transform: translateX(0px);
@@ -49,7 +47,6 @@ relative rounded-xl backdrop-blur-md border
       transform: translateX(40px);
       opacity: 0;
       visibility: hidden;
-  
     }
     to {
       transform: translateX(0px);
@@ -58,27 +55,59 @@ relative rounded-xl backdrop-blur-md border
     }
   }
 
-  @media(width>=768px){
+  @keyframes fade-in {
+    from {
+      transform: scale(50%);
+      opacity: 0;
+    }
+
+    to{
+      transform: scale(100%);
+      opacity: 1;
+    }
+  }
+
+  @media (width<1024px) {
     .group-left {
-    view-timeline-name: --text;
-    view-timeline-axis: block;
-    animation-timeline: --text;
-    animation-name: move-right;
-    animation-range: entry 25% cover 40%;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: fade-in;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+
+    .group-right {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: fade-in;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
   }
 
-  .group-right {
-    view-timeline-name: --text;
-    view-timeline-axis: block;
-    animation-timeline: --text;
-    animation-name: move-left;
-    animation-range: entry 25% cover 40%;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
-  }
-  }
+  @media (width>=1024px) {
+    .group-left {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: move-right;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
 
-  
+    .group-right {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: move-left;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+  }
 </style>
