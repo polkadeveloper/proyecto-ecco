@@ -10,8 +10,12 @@ import Bento from '../components/Bento.astro';
 
 <Layout title="PRECCO: Proyecto ecológico de comunidades" description='Proyecto ecológico de comunidades'>
 	<Header />
-	<!-- <Intro /> -->
-	<IntroLetras />
+	<Intro img='/fondo-sostenible.jpg'>
+		<img class="w-56 md:w-80 hidden md:block" src="/precco-logo-blanco.png" alt="Imagen del logotipo de precco">
+            <h2 class="geist-bold text-3xl text-balance px-5 mb-5 text-center">Proyecto Ecológico de Comunidades</h2>
+            <button class="border-2 border-orange-400/50 rounded-lg px-2 py-1 bg-orange-400/80 text-white text-pretty mx-5">Objetivo 11: Ciudades y Comunidades Sostenibles</button>
+	</Intro>
+	<!-- <IntroLetras /> -->
 	<Descripcion />
 	<Bento />
   
