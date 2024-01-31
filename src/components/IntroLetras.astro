@@ -1,6 +1,24 @@
 
 <section class="min-h-[75vh] md:h-screen flex flex-col gap-5 justify-center items-center">
-    <img class="w-56 md:w-80 hidden md:block" src="/precco-logo.png" alt="Imagen del logotipo de precco">
-    <h2 class="geist-bold text-3xl text-balance px-5">Proyecto Ecológico de Comunidades</h2>
-    <button class="border-2 border-orange-600 rounded-lg px-2 py-1 bg-orange-400 text-white text-balance mx-5">Objetivo 11: Ciudades y Comunidades Sostenibles</button>
+    <img class="w-56 md:w-64 lg:w-80 hidden md:block" src="/precco-logo.png" alt="Imagen del logotipo de precco">
+    <h2 class="geist-bold text-2xl lg:text-3xl text-balance px-5">Proyecto Ecológico de Comunidades</h2>
+    <button class="border-2 border-orange-600 rounded-lg px-2 py-1 bg-orange-400 text-white text-balance mx-5 text-sm lg:text-base">Objetivo 11: Ciudades y Comunidades Sostenibles</button>
 </section>
+
+<style>
+    @keyframes flip-up {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    img {
+        animation: flip-up 2.5s ease-in-out infinite;
+    }
+</style>
