@@ -3,6 +3,10 @@ import FondoBolaRosa from '../components/FondoBolaRosa.astro'
 import FondoCuadros from '../components/FondoCuadros.astro'
 import FondoU from '../components/FondoU.astro'
 import FondoBolaCentro from '../components/FondoBolaCentro.astro'
+import FondoGris from '../components/FondoGris.astro'
+import FondoCuadrosNegro from '../components/FondoCuadrosNegro.astro'
+import FondoDegradado from '../components/FondoDegradado.astro'
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string
@@ -20,18 +24,21 @@ const { title, description } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <ViewTransitions />
     <title>{title}</title>
   </head>
   <body>
-    <FondoCuadros>
+    <FondoCuadrosNegro>
       <slot />
-    </FondoCuadros>
+    </FondoCuadrosNegro>
   </body>
 </html>
 <style is:global>
   html {
     font-family: 'Geist Medium', system-ui, sans-serif;
     font-size: 1.2rem;
+    color-scheme: light dark;
+    color: white;
   }
 
   @font-face {

@@ -1,11 +1,18 @@
-<article class="h-screen md:h-[120vh] mb-12">
+---
+interface Props {
+    class?: string,
+    img: string
+}
 
-    <section class="h-full w-full relative" style="clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0); background-image: url(/fondo.webp); background-position: center; background-repeat: no-repeat; background-size: cover; aspect-ratio: 360:257;">
-        <section class=" h-full flex flex-col gap-5 justify-center items-center backdrop-blur-sm">
-            <img class="w-56 md:w-80 hidden md:block" src="/precco-logo.png" alt="Imagen del logotipo de precco">
-            <h2 class="geist-bold text-3xl text-balance px-5">Proyecto Ecológico de Comunidades</h2>
-            <button class="border-2 border-orange-600 rounded-lg px-2 py-1 bg-orange-400 text-white text-balance mx-5">Objetivo 11: Ciudades y Comunidades Sostenibles</button>
-            <!-- TODO: AÑADIR EL TITULO AL PARRAFO -->
+const { img } = Astro.props
+
+---
+
+<article class="h-screen md:h-[120vh] mb-20">
+
+    <section class="h-full w-full relative" style=`clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0); background-image: url(${img}); background-position: center; background-repeat: no-repeat; background-size: cover; aspect-ratio: 360:257;`>
+        <section class="h-full flex flex-col gap-5 justify-center items-center backdrop-blur-sm bg-black/40">        
+            <slot />
         </section>
     </section>
         

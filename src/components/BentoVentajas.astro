@@ -1,0 +1,140 @@
+---
+import BentoItem from './BentoItem.astro'
+import BentoVentajasItem from './BentoVentajasItem.astro'
+---
+
+<section>
+  <article id="bento" class="w-full max-w-full h-full mb-10">
+    <!-- IMAGEN DE LOS TEJADOS -->
+    <section class="relative img1 overflow-hidden">
+      <div
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        opacity-90 bg-blend-luminosity"
+        style="background-image: url(/tejados.png);"
+      >
+      </div>
+    </section>
+
+    <!-- TEXTO DE LOS TEJADOS -->
+    <section class="txt1 bg-[#a8cdad]/80">
+
+    </section>
+
+    <section class="txt2 bg-[#283f2c]/80">
+
+    </section>
+
+    <section class="relative img2">
+      <div
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        opacity-90 bg-blend-luminosity"
+        style="background-image: url(/comparacion.PNG);"
+      >
+      </div>
+    </section>
+    <section class="txt3 bg-[#7aae82]/80"></section>
+    <section class="txt4 bg-[#e6f2e7]/80"></section>
+    <section class="relative img3">
+      <div
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        opacity-90 bg-blend-luminosity"
+        style="background-image: url(/corredor.PNG);"
+      >
+      </div>
+    </section>
+    <section class="txt5 bg-[#375d3d]/80"></section>
+    <section class="img4 border-2 border-white"></section>
+    <section class="img5 border-2 border-white"></section>
+  </article>
+</section>
+
+<style>
+  @media (max-width: 640px) {
+    #bento {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-areas:
+        'img1'
+        'txt1'
+        'txt2'
+        'img2'
+        'txt3'
+        'txt4'
+        'img3'
+        'txt5'
+        'img4'
+        'img5';
+      grid-template-rows: repeat(10, 20rem);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 640px) {
+    #bento {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-areas:
+        'img1 img1 img1 img1 img1 img1 txt1 txt1 txt1 txt1 txt1 txt1'
+        'img1 img1 img1 img1 img1 img1 txt1 txt1 txt1 txt1 txt1 txt1'
+        'img1 img1 img1 img1 img1 img1 txt1 txt1 txt1 txt1 txt1 txt1'
+        'img1 img1 img1 img1 img1 img1 txt1 txt1 txt1 txt1 txt1 txt1'
+        'img1 img1 img1 img1 img1 img1 txt1 txt1 txt1 txt1 txt1 txt1'
+        'txt2 txt2 txt2 txt2 img2 img2 img2 img2 img2 img2 img2 img2'
+        'txt2 txt2 txt2 txt2 img2 img2 img2 img2 img2 img2 img2 img2'
+        'txt2 txt2 txt2 txt2 img2 img2 img2 img2 img2 img2 img2 img2'
+        'txt2 txt2 txt2 txt2 img2 img2 img2 img2 img2 img2 img2 img2'
+        'txt2 txt2 txt2 txt2 txt3 txt3 txt3 txt3 txt3 txt3 txt3 txt3'
+        'txt2 txt2 txt2 txt2 txt3 txt3 txt3 txt3 txt3 txt3 txt3 txt3'
+        'txt4 txt4 txt4 txt4 txt4 txt4 img3 img3 img3 img3 img3 img3'
+        'txt4 txt4 txt4 txt4 txt4 txt4 img3 img3 img3 img3 img3 img3'
+        'txt4 txt4 txt4 txt4 txt4 txt4 img3 img3 img3 img3 img3 img3'
+        'txt4 txt4 txt4 txt4 txt4 txt4 img3 img3 img3 img3 img3 img3'
+        'txt4 txt4 txt4 txt4 txt4 txt4 img3 img3 img3 img3 img3 img3'
+        'txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5'
+        'txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5 txt5'
+        'img4 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5'
+        'img4 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5'
+        'img4 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5'
+        'img4 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5'
+        'img4 img4 img4 img4 img4 img4 img5 img5 img5 img5 img5 img5';
+      grid-template-rows: repeat(23, 5rem);
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  .img1 {
+    grid-area: img1;
+  }
+
+  .txt1 {
+    grid-area: txt1;
+  }
+
+  .img2 {
+    grid-area: img2;
+  }
+
+  .txt2 {
+    grid-area: txt2;
+  }
+  .txt3 {
+    grid-area: txt3;
+  }
+  .txt4 {
+    grid-area: txt4;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .txt5 {
+    grid-area: txt5;
+  }
+  .img4 {
+    grid-area: img4;
+  }
+  .img5 {
+    grid-area: img5;
+  }
+</style>
