@@ -6,7 +6,7 @@ import FondoBolaCentro from '../components/FondoBolaCentro.astro'
 import FondoGris from '../components/FondoGris.astro'
 import FondoCuadrosNegro from '../components/FondoCuadrosNegro.astro'
 import FondoDegradado from '../components/FondoDegradado.astro'
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from 'astro:transitions'
 
 interface Props {
   title: string
@@ -31,77 +31,76 @@ const { title, description } = Astro.props
     <FondoCuadrosNegro>
       <slot />
     </FondoCuadrosNegro>
+    <style is:global>
+      html {
+        font-family: 'Geist Medium', system-ui, sans-serif;
+        font-size: 1.2rem;
+        color-scheme: light dark;
+        color: white;
+      }
+
+      @font-face {
+        font-family: 'Geist Black';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Black.woff2');
+      }
+
+      .geist-black {
+        font-family: 'Geist Black', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'Geist Bold';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Bold.woff2');
+      }
+
+      .geist-bold {
+        font-family: 'Geist Bold', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'Geist ExtraBold';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-ExtraBold.woff2');
+      }
+
+      .geist-extrabold {
+        font-family: 'Geist ExtraBold', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'Geist ExtraLight';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-ExtraLight.woff2');
+      }
+
+      .geist-extralight {
+        font-family: 'Geist ExtraLight', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'Geist Light';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Light.woff2');
+      }
+
+      .geist-light {
+        font-family: 'Geist Light', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'Geist Medium';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Medium.woff2');
+      }
+
+      .geist-medium {
+        font-family: 'Geist Medium', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'Geist Regular';
+        src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Regular.woff2');
+      }
+
+      .geist-regular {
+        font-family: 'Geist Regular', sans-serif;
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  html {
-    font-family: 'Geist Medium', system-ui, sans-serif;
-    font-size: 1.2rem;
-    color-scheme: light dark;
-    color: white;
-  }
-
-  @font-face {
-    font-family: 'Geist Black';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Black.woff2');
-  }
-
-  .geist-black {
-    font-family: 'Geist Black', sans-serif;
-  }
-
-  @font-face {
-    font-family: 'Geist Bold';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Bold.woff2');
-  }
-
-  .geist-bold {
-    font-family: 'Geist Bold', sans-serif;
-  }
-
-  @font-face {
-    font-family: 'Geist ExtraBold';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-ExtraBold.woff2');
-  }
-
-  .geist-extrabold {
-    font-family: 'Geist ExtraBold', sans-serif;
-  }
-
-  @font-face {
-    font-family: 'Geist ExtraLight';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-ExtraLight.woff2');
-  }
-
-  .geist-extralight {
-    font-family: 'Geist ExtraLight', sans-serif;
-  }
-
-  @font-face {
-    font-family: 'Geist Light';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Light.woff2');
-  }
-
-  .geist-light {
-    font-family: 'Geist Light', sans-serif;
-  }
-
-  @font-face {
-    font-family: 'Geist Medium';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Medium.woff2');
-  }
-
-  .geist-medium {
-    font-family: 'Geist Medium', sans-serif;
-  }
-
-  @font-face {
-    font-family: 'Geist Regular';
-    src: url('/../../../node_modules/geist/dist/fonts/geist-sans/Geist-Regular.woff2');
-  }
-
-  .geist-regular {
-    font-family: 'Geist Regular', sans-serif;
-  }
-
-</style>
