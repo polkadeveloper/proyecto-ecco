@@ -1,20 +1,21 @@
 ---
 interface Props {
-    class?: string,
-    img: string
+  class?: string
+  img: string
 }
 
 const { img } = Astro.props
-
 ---
 
 <article class="h-screen md:h-[120vh] mb-20">
-
-    <section class="h-full w-full relative" style=`clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0); background-image: url(${img}); background-position: center; background-repeat: no-repeat; background-size: cover; aspect-ratio: 360:257;`>
-        <section class="h-full flex flex-col gap-5 justify-center items-center backdrop-blur-sm bg-black/40">        
-            <slot />
-        </section>
+  <section
+    class="h-full w-full relative"
+    style=`clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0); background-image: url(${img}); background-position: center; background-repeat: no-repeat; background-size: cover; aspect-ratio: 360:257;`
+  >
+    <section
+      class="h-full flex flex-col gap-5 justify-center items-center backdrop-blur-sm bg-black/40"
+    >
+      <slot />
     </section>
-        
-
+  </section>
 </article>
