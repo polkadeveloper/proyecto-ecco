@@ -5,22 +5,38 @@ import Intro from '../components/Intro.astro';
 import IntroLetras from '../components/IntroLetras.astro';
 import Descripcion from '../components/Descripcion.astro';
 import Bento from '../components/Bento.astro';
+import Footer from '../components/Footer.astro';
 
 ---
 
 <Layout title="PRECCO: Proyecto ecológico de comunidades" description='Proyecto ecológico de comunidades'>
 	<Header />
-	<Intro img='/fondo-sostenible.jpg'>
-		<img class="w-56 md:w-80 hidden md:block" src="/precco-logo-blanco.png" alt="Imagen del logotipo de precco">
+	<Intro img='/fondo-sostenible.webp'>
+		<img class="w-56 md:w-80 hidden md:block" src="/precco-logo-blanco.webp" alt="Imagen del logotipo de precco">
             <h2 class="geist-bold text-3xl text-balance px-5 mb-5 text-center">Proyecto Ecológico de Comunidades</h2>
             <button class="border-2 border-orange-400/50 rounded-lg px-2 py-1 bg-orange-400/80 text-white text-pretty mx-5">Objetivo 11: Ciudades y Comunidades Sostenibles</button>
 	</Intro>
 	<!-- <IntroLetras /> -->
 	<Descripcion />
 	<Bento />
+	<Footer />
   
 </Layout>
 
 <style>
+    @keyframes flip-up {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
 
+    img {
+        animation: flip-up 2.5s ease-in-out infinite;
+    }
 </style>
