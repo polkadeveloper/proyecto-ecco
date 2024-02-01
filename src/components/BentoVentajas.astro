@@ -16,34 +16,178 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
     </section>
 
     <!-- TEXTO DE LOS TEJADOS -->
-    <section class="txt1 bg-[#a8cdad]/80"></section>
+    <section
+      class="txt1 bg-[#a8cdad]/80 flex flex-col justify-center items-center text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5 xl:pr-24"
+    >
+      <h2
+        class="text-[20px] md:text-lg lg:text-2xl xl:text-4xl geist-bold text-balance"
+      >
+        CLAVES FUNDAMENTALES PARA LAS CIUDADES SOSTENIBLES
+      </h2>
+      <p
+        class="text-[14px] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+      >
+        La <strong>adopción de energía renovable</strong> y <strong
+          >vegetación en los tejados</strong
+        > representa una revolución en la construcción ecológica, contrastando significativamente
+        con las limitaciones de las ciudades modernas. Estas prácticas no solo reducen
+        la dependencia de fuentes de energía contaminantes y mejoran la autosuficiencia
+        energética, sino que también proponen un modelo de desarrollo que armoniza
+        con el medio ambiente y mejora la calidad de vida de sus habitantes.
+      </p>
+    </section>
 
-    <section class="txt2 bg-[#283f2c]/80"></section>
+    <section
+      class="txt2 bg-[#283f2c]/80 flex flex-col justify-center items-center text-left text-white/80 px-4 gap-3 md:px-6 lg:px-12 lg:gap-5 xl:pr-24"
+    >
+      <h2 class="text-4xl lg:text-5xl lg:leading-tight geist-bold text-balance">
+        UN <br />NUEVO DISEÑO URBANO
+      </h2>
+      <p
+        class="text-[16px] leading-[1.6] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+      >
+        La construcción horizontal y de menor altura presenta ventajas
+        significativas frente al modelo vertical actual predominante.
+      </p>
+    </section>
 
     <!-- IMAGEN DE COMPARACIÓN -->
     <section class="relative img2">
       <div
         class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
         opacity-90 bg-blend-luminosity"
-        style="background-image: url(/comparacion.webp); defer: true;"
+        style="background-image: url(/comparacion.webp);"
       >
       </div>
     </section>
-    <section class="txt3 bg-[#7aae82]/80"></section>
-    <section class="txt4 bg-[#e6f2e7]/80"></section>
+
+    <section
+      class="txt3 bg-[#7aae82]/80 flex flex-col justify-center items-center text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
+    >
+      <p
+        class="text-[16px] leading-[1.6] md:text-[14px] lg:text-[15px] xl:text-[18px] geist-light text-pretty"
+      >
+        Una de las principales ventajas es la facilitación del flujo de aire,
+        evitando la creación de "barreras" urbanas que impiden el paso del
+        viento. Esto es crucial para la dispersión natural de contaminantes y
+        para la reducción del efecto de isla calórica, problemas comunes en
+        entornos urbanos densamente construidos. Además, la construcción
+        horizontal promueve una mayor conexión con el entorno natural,
+        permitiendo la integración de espacios verdes y áreas recreativas.
+      </p>
+    </section>
+
+    <!-- TEXTO DE CORREDOR -->
+    <section
+      class="txt4 bg-[#e6f2e7]/80 flex flex-col justify-center items-start text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
+    >
+      <h2
+        class="text-[22px] md:text-lg lg:text-2xl xl:text-5xl geist-bold text-balance"
+      >
+        CONECTANDO ECOSISTEMAS
+      </h2>
+      <p
+        class="text-[14px] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+      >
+        Las ciudades ecológicas desempeñan un papel crucial como corredores
+        ecológicos, facilitando la conectividad entre distintos hábitats y
+        mitigando la fragmentación y aislamiento de los ecosistemas, problemas
+        generados por la expansión urbana tradicional. Los corredores no solo
+        permiten el movimiento y la dispersión de especies de flora y fauna,
+        sino que también promueven la biodiversidad al proporcionar rutas
+        seguras para la migración y el intercambio genético entre poblaciones
+        aisladas.
+      </p>
+    </section>
+
+    <!-- IMAGEN DE CORREDOR -->
     <section class="relative img3">
       <div
         class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
         opacity-90 bg-blend-luminosity"
-        style="background-image: url(/corredor.webp);"
+        style=`background-image: url(/corredor.webp)`
+        ;
       >
       </div>
     </section>
-    <section class="txt5 bg-[#375d3d]/80"></section>
-    <section class="img4 border-2 border-white"></section>
-    <section class="img5 border-2 border-white"></section>
+
+    <!-- TEXTO DE LA COMPARACIÓN DE CIUDADES -->
+    <section
+      class="txt5 bg-[#375d3d]/80 flex flex-col justify-center items-center text-left md:text-center text-white/80 px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
+    >
+      <h2
+        class="text-2xl lg:text-3xl lg:leading-tight geist-bold text-balance xl:text-wrap xl:px-44"
+      >
+        DE GRIS A VERDE: CONTRASTES ENTRE LA CIUDAD ACTUAL Y SU FUTURO ECOLÓGICO
+      </h2>
+      <p
+        class="text-[16px] leading-[1.6] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+      >
+        Explora la transformación de espacios urbanos densamente construidos y
+        contaminados hacia entornos sostenibles y llenos de vida
+      </p>
+    </section>
+
+    <section class="relative img4">
+      <div
+        id="bento-ciudad"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        opacity-90 bg-blend-luminosity"
+        style=`background-image: url(/maqueta-ciudad.webp)`
+        ;
+      >
+      </div>
+    </section>
+
+    <section class="relative img5">
+      <div
+        id="bento-sostenible"
+        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        opacity-90 bg-blend-luminosity"
+        style=`background-image: url(/maqueta-sostenible.webp)`
+        ;
+      >
+      </div>
+    </section>
   </article>
 </section>
+
+<script>
+  const bentoCiudad = document.getElementById('bento-ciudad')
+  const bentoSostenible = document.getElementById('bento-sostenible')
+
+  const imagenesCiudad = {
+    '0': '/maqueta-ciudad.webp',
+    '1': '/calle-ciudad.webp',
+    '2': '/ciudad.webp',
+    '3': '/panoramica-ciudad.webp',
+  }
+
+  const imagenesSostenible = {
+    '0': '/maqueta-sostenible.webp',
+    '1': '/calle-sostenible.webp',
+    '2': '/sostenible.webp',
+    '3': '/panoramica-sostenible.webp',
+  }
+
+  let indexCiudad = 0
+  let indexSostenible = 0
+
+  setInterval(() => {
+    bentoCiudad.style.opacity = '0'
+    bentoSostenible.style.opacity = '0'
+
+    setTimeout(() => {
+      bentoCiudad.style.backgroundImage = `url(${imagenesCiudad[indexCiudad]})`
+      bentoSostenible.style.backgroundImage = `url(${imagenesSostenible[indexSostenible]})`
+      bentoCiudad.style.opacity = '1'
+      bentoSostenible.style.opacity = '1'
+    }, 600) // tiempo de transición
+
+    indexCiudad = (indexCiudad + 1) % 4
+    indexSostenible = (indexSostenible + 1) % 4
+  }, 3600) // intervalo + tiempo de transición
+</script>
 
 <style>
   @media (max-width: 640px) {
@@ -52,8 +196,8 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
       width: 100%;
       height: 100%;
       grid-template-areas:
-        'img1'
         'txt1'
+        'img1'
         'txt2'
         'img2'
         'txt3'
@@ -133,5 +277,10 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
   }
   .img5 {
     grid-area: img5;
+  }
+
+  #bento-ciudad,
+  #bento-sostenible {
+    transition: opacity 1s;
   }
 </style>
