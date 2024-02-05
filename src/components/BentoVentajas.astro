@@ -4,12 +4,12 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
 ---
 
 <section>
-  <article id="bento" class="w-full max-w-full h-full mb-10">
+  <article id="bento" class="w-full max-w-full h-full mb-10 z-50">
     <!-- IMAGEN DE LOS TEJADOS -->
     <section class="relative img1 overflow-hidden">
       <div
         class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
-        opacity-90 bg-blend-luminosity"
+        bg-blend-luminosity"
         style="background-image: url(/tejados.webp);"
       >
       </div>
@@ -20,12 +20,12 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
       class="txt1 bg-[#a8cdad]/80 flex flex-col justify-center items-center text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5 xl:pr-24"
     >
       <h2
-        class="text-[20px] md:text-lg lg:text-2xl xl:text-4xl geist-bold text-balance"
+        class="group-right text-[20px] md:text-lg lg:text-2xl xl:text-4xl geist-bold text-balance"
       >
         CLAVES FUNDAMENTALES PARA LAS CIUDADES SOSTENIBLES
       </h2>
       <p
-        class="text-[14px] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+        class="group-right text-[14px] md:text-[16px] lg:text-[18px] geist-light text-pretty"
       >
         La <strong>adopción de energía renovable</strong> y <strong
           >vegetación en los tejados</strong
@@ -38,13 +38,15 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
     </section>
 
     <section
-      class="txt2 bg-[#283f2c]/80 flex flex-col justify-center items-center text-left text-white/80 px-4 gap-3 md:px-6 lg:px-12 lg:gap-5 xl:pr-24"
+      class="txt2 bg-[#283f2c] flex flex-col justify-center items-center text-left text-white/80 px-4 gap-3 md:px-6 lg:px-12 lg:gap-5 xl:pr-24"
     >
-      <h2 class="text-4xl lg:text-5xl lg:leading-tight geist-bold text-balance">
+      <h2
+        class="group-left text-4xl lg:text-5xl lg:leading-tight geist-bold text-balance"
+      >
         UN <br />NUEVO DISEÑO URBANO
       </h2>
       <p
-        class="text-[16px] leading-[1.6] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+        class="group-left text-[16px] leading-[1.6] md:text-[16px] lg:text-[18px] geist-light text-pretty"
       >
         La construcción horizontal y de menor altura presenta ventajas
         significativas frente al modelo vertical actual predominante.
@@ -55,17 +57,18 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
     <section class="relative img2">
       <div
         class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
-        opacity-90 bg-blend-luminosity"
+        bg-blend-luminosity"
         style="background-image: url(/comparacion.webp);"
       >
       </div>
     </section>
 
+    <!-- TEXTO DE UN NUEVO DISEÑO URBANO -->
     <section
-      class="txt3 bg-[#7aae82]/80 flex flex-col justify-center items-center text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
+      class="txt3 bg-[#7aae82] flex flex-col justify-center items-center text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
     >
       <p
-        class="text-[16px] leading-[1.6] md:text-[14px] lg:text-[15px] xl:text-[18px] geist-light text-pretty"
+        class="group-right text-[16px] leading-[1.6] md:text-[14px] lg:text-[15px] xl:text-[18px] geist-light text-pretty"
       >
         Una de las principales ventajas es la facilitación del flujo de aire,
         evitando la creación de "barreras" urbanas que impiden el paso del
@@ -82,12 +85,12 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
       class="txt4 bg-[#e6f2e7]/80 flex flex-col justify-center items-start text-left text-black px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
     >
       <h2
-        class="text-[22px] md:text-lg lg:text-2xl xl:text-5xl geist-bold text-balance"
+        class="group-left text-[22px] md:text-lg lg:text-2xl xl:text-5xl geist-bold text-balance"
       >
         CONECTANDO ECOSISTEMAS
       </h2>
       <p
-        class="text-[14px] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+        class="group-left text-[14px] md:text-[16px] lg:text-[18px] geist-light text-pretty"
       >
         Las ciudades ecológicas desempeñan un papel crucial como corredores
         ecológicos, facilitando la conectividad entre distintos hábitats y
@@ -104,7 +107,7 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
     <section class="relative img3">
       <div
         class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
-        opacity-90 bg-blend-luminosity"
+        bg-blend-luminosity"
         style=`background-image: url(/corredor.webp)`
         ;
       >
@@ -113,15 +116,15 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
 
     <!-- TEXTO DE LA COMPARACIÓN DE CIUDADES -->
     <section
-      class="txt5 bg-[#375d3d]/80 flex flex-col justify-center items-center text-left md:text-center text-white/80 px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
+      class="txt5 bg-[#375d3d] flex flex-col justify-center items-center text-left md:text-center text-white/80 px-4 gap-3 md:px-6 lg:px-12 lg:gap-5"
     >
       <h2
-        class="text-2xl lg:text-3xl lg:leading-tight geist-bold text-balance xl:text-wrap xl:px-44"
+        class="group-up text-2xl lg:text-3xl lg:leading-tight geist-bold text-balance xl:text-wrap xl:px-44"
       >
         DE GRIS A VERDE: CONTRASTES ENTRE LA CIUDAD ACTUAL Y SU FUTURO ECOLÓGICO
       </h2>
       <p
-        class="text-[16px] leading-[1.6] md:text-[16px] lg:text-[18px] geist-light text-pretty"
+        class="group-up text-[16px] leading-[1.6] md:text-[16px] lg:text-[18px] geist-light text-pretty"
       >
         Explora la transformación de espacios urbanos densamente construidos y
         contaminados hacia entornos sostenibles y llenos de vida
@@ -130,10 +133,34 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
 
     <section class="relative img4">
       <div
-        id="bento-ciudad"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
-        opacity-90 bg-blend-luminosity"
-        style=`background-image: url(/maqueta-ciudad.webp)`
+        id="image1"
+        class="imagen select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/maqueta-ciudad.webp);`
+        ;
+      >
+      </div>
+      <div
+        id="image2"
+        class="imagen oculta select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/ciudad.webp);`
+        ;
+      >
+      </div>
+      <div
+        id="image3"
+        class="imagen oculta select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/panoramica-ciudad.webp);`
+        ;
+      >
+      </div>
+      <div
+        id="image4"
+        class="imagen oculta select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/calle-ciudad.webp);`
         ;
       >
       </div>
@@ -141,10 +168,34 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
 
     <section class="relative img5">
       <div
-        id="bento-sostenible"
-        class="select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
-        opacity-90 bg-blend-luminosity"
+        id="image6"
+        class="imagen select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
         style=`background-image: url(/maqueta-sostenible.webp)`
+        ;
+      >
+      </div>
+      <div
+        id="image7"
+        class="imagen oculta select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/sostenible.webp)`
+        ;
+      >
+      </div>
+      <div
+        id="image8"
+        class="imagen oculta select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/panoramica-sostenible.webp)`
+        ;
+      >
+      </div>
+      <div
+        id="image9"
+        class="imagen oculta select-none absolute left-0 top-0 bottom-0 right-0 bg-cover bg-center bg-no-repeat w-full h-full
+        bg-blend-luminosity"
+        style=`background-image: url(/calle-sostenible.webp)`
         ;
       >
       </div>
@@ -153,40 +204,52 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
 </section>
 
 <script>
-  const bentoCiudad = document.getElementById('bento-ciudad')
-  const bentoSostenible = document.getElementById('bento-sostenible')
+  document.addEventListener('astro:page-load', () => {
+    let images = [
+      document.getElementById('image1'),
+      document.getElementById('image2'),
+      document.getElementById('image3'),
+      document.getElementById('image4'),
+    ].filter(Boolean) // Filtra cualquier imagen que sea null
 
-  const imagenesCiudad = {
-    '0': '/maqueta-ciudad.webp',
-    '1': '/calle-ciudad.webp',
-    '2': '/ciudad.webp',
-    '3': '/panoramica-ciudad.webp',
-  }
+    let currentIndex = 0
 
-  const imagenesSostenible = {
-    '0': '/maqueta-sostenible.webp',
-    '1': '/calle-sostenible.webp',
-    '2': '/sostenible.webp',
-    '3': '/panoramica-sostenible.webp',
-  }
+    setInterval(function () {
+      // Asegúrate de que la imagen actual existe antes de intentar acceder a sus propiedades
+      if (images[currentIndex]) {
+        images[currentIndex].classList.add('oculta')
+      }
 
-  let indexCiudad = 0
-  let indexSostenible = 0
+      currentIndex = (currentIndex + 1) % images.length
 
-  setInterval(() => {
-    bentoCiudad.style.opacity = '0'
-    bentoSostenible.style.opacity = '0'
+      // Asegúrate de que la siguiente imagen existe antes de intentar acceder a sus propiedades
+      if (images[currentIndex]) {
+        images[currentIndex].classList.remove('oculta')
+      }
+    }, 5000)
 
-    setTimeout(() => {
-      bentoCiudad.style.backgroundImage = `url(${imagenesCiudad[indexCiudad]})`
-      bentoSostenible.style.backgroundImage = `url(${imagenesSostenible[indexSostenible]})`
-      bentoCiudad.style.opacity = '1'
-      bentoSostenible.style.opacity = '1'
-    }, 600) // tiempo de transición
+    // Repite el mismo proceso para el segundo conjunto de imágenes
+    let images2 = [
+      document.getElementById('image6'),
+      document.getElementById('image7'),
+      document.getElementById('image8'),
+      document.getElementById('image9'),
+    ].filter(Boolean)
 
-    indexCiudad = (indexCiudad + 1) % 4
-    indexSostenible = (indexSostenible + 1) % 4
-  }, 3600) // intervalo + tiempo de transición
+    let currentIndex2 = 0
+
+    setInterval(function () {
+      if (images2[currentIndex2]) {
+        images2[currentIndex2].classList.add('oculta')
+      }
+
+      currentIndex2 = (currentIndex2 + 1) % images2.length
+
+      if (images2[currentIndex2]) {
+        images2[currentIndex2].classList.remove('oculta')
+      }
+    }, 5000)
+  })
 </script>
 
 <style>
@@ -279,8 +342,108 @@ import BentoVentajasItem from './BentoVentajasItem.astro'
     grid-area: img5;
   }
 
-  #bento-ciudad,
-  #bento-sostenible {
-    transition: opacity 1s;
+  .imagen {
+    /* Inicialmente, la imagen está completamente visible */
+    opacity: 1;
+
+    /* La transición se aplica a la propiedad de opacidad, dura 0.5 segundos y tiene un efecto de "ease" */
+    transition: opacity 1s ease-in-out;
+  }
+
+  .imagen.oculta {
+    /* Cuando se aplica la clase "oculta", la imagen se vuelve completamente transparente */
+    opacity: 0;
+  }
+
+  @keyframes move-right {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes move-left {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      transform: scale(50%);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(100%);
+      opacity: 1;
+    }
+  }
+
+  @media (width<1024px) {
+    .group-left {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: fade-in;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+
+    .group-right {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: fade-in;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+  }
+
+  @media (width>=1024px) {
+    .group-left {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: move-right;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+
+    .group-right {
+      view-timeline-name: --text;
+      view-timeline-axis: block;
+      animation-timeline: --text;
+      animation-name: move-left;
+      animation-range: entry 25% cover 40%;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+  }
+
+  .group-up {
+    view-timeline-name: --text;
+    view-timeline-axis: block;
+    animation-timeline: --text;
+    animation-name: fade-in;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
   }
 </style>
