@@ -1,0 +1,122 @@
+---
+interface Props {
+  title?: string
+  text?: string
+  img?: string
+}
+
+const { title, text, img } = Astro.props
+---
+
+<article
+  class="galeria-item relative imagen h-[15rem] lg:h-[25rem] lg:w-0 lg:flex-grow lg:object-cover opacity-90 transition-all duration-[0.7s] ease-in-out
+  lg:hover:cursor-crosshair"
+  style=`background-image: url(${img}); background-position:center; background-size: cover; background-repeat: no-repeat;`
+>
+  <div
+    class="absolute -z-20 bottom-0 top-0 w-full h-full bg-gradient-to-b from-black/10 via-black/30 to-black/50"
+  >
+  </div>
+  <p
+    class="titulo pointer-events-none text-center text-xl z-0 transition-all duration-[0.7s] ease-in-out absolute top-10 px-2 w-full"
+  >
+    {title}
+  </p>
+
+  <p
+    class="parrafo pointer-events-none z-0 flex justify-center items-center h-full w-full px-5 pr-11 md:px-12 transition-all duration-[0.7s] ease-in-out opacity-0"
+  >
+    {text}
+  </p>
+
+  <button
+    class="boton z-0 lg:hidden absolute top-[7.5rem] right-[1.2rem] transition-all duration-[0.7s] ease-in-out"
+    ><svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      ><path
+        fill="#ffffff"
+        d="m8.82 12l7.715 7.715q.22.222.218.53q-.003.307-.224.528t-.529.221q-.308 0-.529-.22L7.83 13.136q-.242-.243-.354-.54q-.112-.299-.112-.597t.112-.596q.112-.298.354-.54l7.64-7.643q.221-.221.532-.218q.31.003.532.224t.22.529q0 .307-.22.529z"
+      ></path></svg
+    ></button
+  >
+</article>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const galeriaItems = Array.from(document.querySelectorAll('.galeria-item'))
+
+    galeriaItems.forEach((item) => {
+      const boton = item.querySelector('.boton')
+
+      boton.addEventListener('click', () => {
+        console.log('Evento click activado en el botón', boton)
+        if (item.classList.contains('rotado')) {
+          item.classList.remove('rotado')
+        } else {
+          item.classList.add('rotado')
+        }
+      })
+    })
+  })
+</script>
+
+<style>
+  .titulo,
+  .parrafo {
+    color: white;
+  }
+
+  .galeria-item.rotado .boton {
+    /* estilos para el botón cuando está rotado */
+    transform: rotate(-90deg);
+  }
+
+  .galeria-item.rotado .titulo {
+    /* estilos para el título cuando está abierto */
+    opacity: 0;
+  }
+
+  .galeria-item.rotado .parrafo {
+    /* estilos para el párrafo cuando está abierto */
+    opacity: 1;
+  }
+
+  .galeria-item .titulo {
+    /* estilos para el título cuando está cerrado */
+    opacity: 1;
+  }
+
+  .galeria-item .parrafo {
+    /* estilos para el párrafo cuando está cerrado */
+    opacity: 0;
+  }
+  @media (width >= 1024px) {
+    article {
+      transition:
+        width 0.7s,
+        opacity 0.7s,
+        filter 0.7s;
+    }
+
+    article .parrafo {
+      /* Añade una transición a la opacidad */
+      transition: opacity 0s;
+    }
+
+    article:hover {
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+
+    article:hover .parrafo {
+      opacity: 1;
+      /* Añade un retraso a la transición de la opacidad */
+      transition: opacity 0.5s;
+      transition-delay: 0.7s; /* Ajusta este valor al tiempo que dura la transición del article */
+    }
+  }
+</style>
