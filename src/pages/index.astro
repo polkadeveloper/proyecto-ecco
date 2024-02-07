@@ -2,10 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Intro from '../components/Intro.astro'
-import IntroLetras from '../components/IntroLetras.astro'
-import Descripcion from '../components/Descripcion.astro'
 import Bento from '../components/Bento.astro'
 import Footer from '../components/Footer.astro'
+import Galeria from '../components/Galeria.astro'
 ---
 
 <Layout
@@ -19,16 +18,19 @@ import Footer from '../components/Footer.astro'
       src="/precco-logo-blanco.webp"
       alt="Imagen del logotipo de precco"
     />
-    <h2 class="geist-bold text-3xl text-balance px-5 mb-5 text-center text-white">
+    <h2
+      class="geist-bold text-3xl text-balance px-5 mb-5 md:text-center text-white"
+    >
       Proyecto Ecológico de Comunidades
     </h2>
-    <button
+
+    <a
       class="border-2 border-orange-400/50 rounded-lg px-2 py-1 bg-orange-400/80 text-white text-pretty mx-5"
-      >Objetivo 11: Ciudades y Comunidades Sostenibles</button
+      href="https://shorturl.at/vCN07"
+      target="_blank">Objetivo 11: Ciudades y Comunidades Sostenibles</a
     >
   </Intro>
-  <!-- <IntroLetras /> -->
-  <Descripcion />
+  <Galeria />
   <Bento />
   <Footer />
 </Layout>
