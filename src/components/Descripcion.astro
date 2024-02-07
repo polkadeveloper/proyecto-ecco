@@ -1,31 +1,40 @@
+---
+import Tarjeta from './Tarjeta.astro'
+---
+
+
 <section
-  class="flex flex-col gap-5 justify-center items-center max-w-3xl m-auto mb-20 text-lg px-5 md:px-24 lg:px-5 group"
+  class="flex flex-col gap-5 justify-center items-center max-w-3xl m-auto mb-20 text-lg px-5 md:px-24 lg:px-5"
 >
   <h1
     class="text-balance geist-black text-3xl lg:text-5xl mb-10 md:text-center text-[#283f2c]"
   >
     TRAZANDO EL FUTURO SOSTENIBLE
   </h1>
-  <p class="text-pretty">
-    <strong>Bienvenido a PRECCO</strong>, el futuro de la vida urbana. En
-    nuestra búsqueda de un mañana más sostenible, creamos un proyecto que
-    redefine la forma en que vivimos y construimos comunidades.
-  </p>
 
-  <p class="text-pretty">
-    Descubre cómo PRECCO se convierte en la respuesta al llamado del <strong
-      class="text-orange-400">Objetivo 11 de la Agenda 2030</strong
-    > de las Naciones Unidas. Únete a nosotros en la creación de ciudades y comunidades
-    más
-    <strong class="text-green-600"
-      >sostenibles, inclusivas e inteligentes</strong
-    >.
-  </p>
-
-  <p class="text-pretty">
-    <strong>¡Bienvenido al cambio!</strong>
-  </p>
+  <section class="flex flex-col justify-center items-center gap-7">
+    <article
+      class="flex flex-col lg:flex-row justify-center items-center gap-7"
+    >
+        <Tarjeta
+          img="/bosque.webp"
+          title="¿Qué es PRECCO?"
+          text="PRECCO es una iniciativa que busca transformar las comunidades urbanas en entornos sostenibles y conectados con la naturaleza."
+        />
+        <Tarjeta
+          img="/rio.webp"
+          title="¿Qué objetivos tiene?"
+          text="El proyecto ECCO pretende aumentar el transporte limpio, promover la construcción horizontal y generar ciudades que funcionen como corredores ecológicos."
+        />
+        <Tarjeta
+          img="/plaza.webp"
+          title="¿Cómo se consiguen?"
+          text="Para cumplir los objetivos, PRECCO ha creado comunidades modelo dotadas de innovaciones ecológicas que establecen un estándar para el futuro urbano."
+        />
+    </article>
+  </section>
 </section>
+
 
 <style>
   @keyframes move-up {
