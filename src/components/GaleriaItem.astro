@@ -53,6 +53,15 @@ const { title, text, img } = Astro.props
 
       boton.addEventListener('click', () => {
         console.log('Evento click activado en el botón', boton)
+
+        // Cierra todos los elementos
+        galeriaItems.forEach((otherItem) => {
+          if (otherItem !== item && otherItem.classList.contains('rotado')) {
+            otherItem.classList.remove('rotado')
+          }
+        })
+
+        // Abre o cierra el elemento actual
         if (item.classList.contains('rotado')) {
           item.classList.remove('rotado')
         } else {
