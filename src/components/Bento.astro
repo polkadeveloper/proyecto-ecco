@@ -2,12 +2,36 @@
 import BentoItem from './BentoItem.astro'
 ---
 
-<section>
+<section
+  class="flex flex-col gap-5 justify-center items-center max-w-3xl m-auto mt-20 mb-10 text-lg px-5 md:px-24 lg:px-5 group"
+>
   <h1
-    class="text-balance geist-bold text-3xl lg:text-3xl mt-12 mb-8 md:text-center text-[#283f2c] px-5"
+    class="group-up text-balance geist-bold text-3xl md:text-4xl lg:text-5xl md:text-center mb-10 text-[#283f2c]"
   >
     COMUNIDADES PRECCO
   </h1>
+
+  <p class="group-up text-pretty">
+    Las <strong>comunidades PRECCO</strong> son un innovador ejemplo de <strong
+      class="text-[#7EB56A]"
+    >
+      vida sostenible y eficiencia ecológica
+    </strong>. Se caracterizan por su <strong>
+      compromiso con el medio ambiente
+    </strong>, integrando tecnologías verdes y prácticas sustentables que
+    fomentan la biodiversidad y el uso de energías renovables.
+
+    <p class="group-up text-pretty">
+      Este enfoque holístico hacia la sostenibilidad busca no solo <strong>
+        reducir el impacto ambiental
+      </strong>, sino también <strong>
+        mejorar la calidad de vida de sus residentes
+      </strong>.
+    </p>
+  </p>
+</section>
+
+<section>
   <article
     class="w-full max-w-[1400px] grid grid-cols-10 gap-4 auto-rows-[25rem] mx-auto p-2 md:p-12 lg:p-8"
   >
@@ -102,3 +126,27 @@ import BentoItem from './BentoItem.astro'
     </BentoItem>
   </article>
 </section>
+
+<style>
+  .group-up {
+    view-timeline-name: --text;
+    view-timeline-axis: block;
+    animation-timeline: --text;
+    animation-name: fade-in;
+    animation-range: entry 15% cover 30%;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+
+  @keyframes fade-in {
+    from {
+      transform: scale(65%);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(100%);
+      opacity: 1;
+    }
+  }
+</style>
