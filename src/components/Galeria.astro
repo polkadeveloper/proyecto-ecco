@@ -2,9 +2,33 @@
 import GaleriaItem from './GaleriaItem.astro'
 ---
 
-<h1 class="text-balance geist-bold text-3xl lg:text-3xl md:text-center mb-10 px-5 text-[#283f2c]">
-  TRAZANDO EL FUTURO SOSTENIBLE
-</h1>
+<section
+  class="flex flex-col gap-5 justify-center items-center max-w-3xl m-auto mb-20 text-lg px-5 md:px-24 lg:px-5 group"
+>
+  <h1
+    class="group-up text-balance geist-bold text-3xl md:text-4xl lg:text-5xl md:text-center mb-10 text-[#283f2c]"
+  >
+    TRAZANDO EL FUTURO SOSTENIBLE
+  </h1>
+
+  <p class="group-up text-pretty">
+    <strong>Bienvenido a PRECCO</strong>, el futuro de la vida urbana. En
+    nuestra búsqueda de un mañana más sostenible, creamos un proyecto que
+    redefine la forma en que vivimos y construimos comunidades.
+  </p>
+
+  <p class="group-up text-pretty">
+    Descubre cómo PRECCO se convierte en la respuesta al llamado del <strong
+      class="text-orange-400"
+    >
+      Objetivo 11 de la Agenda 2030
+    </strong> de las Naciones Unidas. Únete a nosotros en la creación de ciudades
+    y comunidades más <strong class="text-[#7EB56A]"
+      >sostenibles, inclusivas e inteligentes</strong
+    >.
+  </p>
+</section>
+
 <section class="w-full lg:flex overflow-hidden">
   <GaleriaItem
     title="¿QUÉ ES PRECCO?"
@@ -13,7 +37,7 @@ import GaleriaItem from './GaleriaItem.astro'
   />
   <GaleriaItem
     title="¿CÓMO SURGIÓ LA IDEA?"
-    text="Para cumplir los objetivos, PRECCO ha creado comunidades modelo dotadas de innovaciones ecológicas que establecen un estándar para el futuro urbano."
+    text="PRECCO se inspira en la idea de abordar los desafíos del Objetivo 11 de la Agenda 2030 como un punto de partida clave para encontrar soluciones a otros objetivos medioambientales y mitigar impactos urbanos en la vida humana, los ecosistemas y el clima."
     img="/idea.webp"
   />
   <GaleriaItem
@@ -28,7 +52,31 @@ import GaleriaItem from './GaleriaItem.astro'
   />
   <GaleriaItem
     title="AGENDA 2030"
-    text="Para cumplir los objetivos, PRECCO ha creado comunidades modelo dotadas de innovaciones ecológicas que establecen un estándar para el futuro urbano."
+    text="PRECCO impulsa el Objetivo 11 de la Agenda 2030, mejorando el transporte con bicicletas (11.2), promoviendo una urbanización sostenible (11.3), protegiendo el patrimonio natural (11.4), reduciendo el impacto ambiental urbano (11.6), y facilitando el acceso a espacios verdes y seguros (11.7)."
     img="/agenda2030.webp"
   />
 </section>
+
+<style>
+  .group-up {
+    view-timeline-name: --text;
+    view-timeline-axis: block;
+    animation-timeline: --text;
+    animation-name: fade-in;
+    animation-range: entry 15% cover 30%;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+
+  @keyframes fade-in {
+    from {
+      transform: scale(65%);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(100%);
+      opacity: 1;
+    }
+  }
+</style>
