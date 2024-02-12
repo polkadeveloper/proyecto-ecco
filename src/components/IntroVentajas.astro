@@ -10,7 +10,7 @@ const { img } = Astro.props
 <article class="h-screen md:h-[120vh]">
   <section
     class="h-full w-full relative"
-    style=`background-image: url(${img}); background-position: center; background-repeat: no-repeat; background-size: cover; aspect-ratio: 360:257;`
+    style=`background-image: url(${img}); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; aspect-ratio: 360:257;`
   >
     <section
       class="relative h-full flex flex-col gap-5 justify-center items-center backdrop-blur-sm bg-black/40"
