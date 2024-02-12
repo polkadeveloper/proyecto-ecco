@@ -1,0 +1,24 @@
+---
+import Code from '../components/Code.astro'
+import CodeLeft from '../components/CodeLeft.astro'
+import LayoutIa from '../layouts/LayoutIa.astro'
+import Header from '../components/Header.astro'
+import FooterBlanco from '../components/FooterBlanco.astro'
+import InicioIa from '../components/InicioIa.astro'
+---
+
+<LayoutIa
+  title="IA: ¿Cómo afecta en el desarrollo de software?"
+  description="Explicación de las herramientas de inteligencia artificial utilizadas en el desarrollo de software del proyecto PRECCO y que nos han aportado."
+>
+  <Header />
+  <InicioIa />
+  <section class="flex flex-col md:gap-12 pb-10">
+    <Code />
+    <div class="hidden xl:block">
+      <CodeLeft />
+    </div>
+    <Code />
+  </section>
+  <FooterBlanco />
+</LayoutIa>
