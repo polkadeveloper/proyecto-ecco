@@ -9,7 +9,7 @@ const { title, text, img } = Astro.props
 ---
 
 <article
-  class="galeria-item relative imagen h-[15rem] lg:h-[25rem] lg:w-0 lg:flex-grow lg:object-cover opacity-90 transition-all duration-[0.7s] ease-in-out
+  class="galeria-item relative imagen h-[25rem] md:h-[15rem] lg:h-[25rem] lg:w-0 lg:flex-grow lg:object-cover opacity-90 transition-all duration-[0.7s] ease-in-out
   lg:hover:cursor-crosshair"
   style=`background-image: url(${img}); background-position:center; background-size: cover; background-repeat: no-repeat;`
 >
@@ -30,7 +30,7 @@ const { title, text, img } = Astro.props
   </p>
 
   <button
-    class="boton z-0 lg:hidden absolute top-[7.5rem] right-[1.2rem] transition-all duration-[0.7s] ease-in-out"
+    class="boton z-0 lg:hidden absolute top-[12.5rem] md:top-[7.5rem] right-[1.2rem] transition-all duration-[0.7s] ease-in-out"
     aria-label="Botón para abrir la descripción del artículo"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
