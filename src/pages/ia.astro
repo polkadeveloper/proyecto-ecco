@@ -14,11 +14,68 @@ import InicioIa from '../components/InicioIa.astro'
   <Header />
   <InicioIa />
   <section class="flex flex-col md:gap-12 pb-10">
-    <Code />
+    <Code
+      title="Subimos nuestro código a GitHub"
+      description="GitHub Copilot mejora la eficiencia al redactar mensajes de commit al analizar los cambios en nuestro código y proporcionar mensajes apropiados, agilizando así el proceso de documentación y facilitando una comunicación clara y concisa sobre las modificaciones realizadas."
+      video="/videoCommits.webm"
+    />
     <div class="hidden xl:block">
-      <CodeLeft />
+      <CodeLeft
+        title="Sugerencias en tiempo real"
+        description=" Esta herramienta revolucionaria no solo facilita la escritura de código, sino que también te ayuda a visualizar de manera clara y concisa tus objetivos. GitHub Copilot analiza constantemente tu código, ofreciendo sugerencias y mejoras que puedes aceptar con un simple toque de tecla, brindándote un flujo de trabajo más eficiente y productivo."
+        video="/videoCopilot.webm"
+      />
     </div>
-    <Code />
+    <div class="xl:hidden">
+      <Code
+        title="Sugerencias en tiempo real"
+        description=" Esta herramienta revolucionaria no solo facilita la escritura de código, sino que también te ayuda a visualizar de manera clara y concisa tus objetivos. GitHub Copilot analiza constantemente tu código, ofreciendo sugerencias y mejoras que puedes aceptar con un simple toque de tecla, brindándote un flujo de trabajo más eficiente y productivo."
+        video="/videoCopilot.webm"
+      />
+    </div>
+    <Code
+      title="Chatea con tu asistente de código"
+      description="Con esta integración directa en el editor de código, entramos en un diálogo fluido con GitHub Copilot, permitiéndonos interactuar de manera intuitiva con nuestro propio código. Podemos plantearle preguntas específicas, solicitar sugerencias personalizadas y aprovechar al máximo la colaboración instantánea para mejorar y optimizar nuestro flujo de trabajo de programación."
+      video="/videoChat.webm"
+    />
+    <div class="hidden xl:block">
+      <CodeLeft
+        title="Tablas comparativas eficientes"
+        description="ChatGPT-4 es una herramienta valiosa para crear tablas comparativas, ofreciendo una manera rápida y eficiente de organizar y presentar información. Permite sintetizar y comparar datos de manera clara, facilitando la comprensión de diferencias clave en un formato estructurado y accesible."
+        video="/chat-video-tabla.webm"
+      />
+    </div>
+    <div class="xl:hidden">
+      <Code
+        title="Tablas comparativas eficientes"
+        description="ChatGPT-4 es una herramienta valiosa para crear tablas comparativas, ofreciendo una manera rápida y eficiente de organizar y presentar información. Permite sintetizar y comparar datos de manera clara, facilitando la comprensión de diferencias clave en un formato estructurado y accesible."
+        video="/chat-video-tabla.webm"
+      />
+    </div>
+    <Code
+      title="Sintetiza información clave en texto breve y claro"
+      description="La capacidad de escribir textos breves y sintetizar información resulta crucial para mejorar la eficiencia del tiempo, ofreciendo claridad y precisión en la comunicación. Facilita la toma de decisiones al presentar información clave de forma accesible y directa, lo que también mejora la retención de datos."
+      video="/chat-video-texto.webm"
+    />
+    <div class="hidden xl:block">
+      <CodeLeft
+        title="Transformando ideas en imágenes"
+        description="DALL-E revoluciona la creación de contenido visual, permitiendo generar imágenes personalizadas a partir de descripciones textuales. Esta herramienta de IA facilita la visualización de ideas de manera rápida y creativa, ahorrando tiempo en diseño gráfico y ampliando las posibilidades creativas para todos, democratizando el acceso a la creación de arte y diseños únicos con facilidad."
+        video="/chat-video-imagen.webm"
+      />
+    </div>
+    <div class="xl:hidden">
+      <Code
+        title="Transformando ideas en imágenes"
+        description="DALL-E revoluciona la creación de contenido visual, permitiendo generar imágenes personalizadas a partir de descripciones textuales. Esta herramienta de IA facilita la visualización de ideas de manera rápida y creativa, ahorrando tiempo en diseño gráfico y ampliando las posibilidades creativas para todos, democratizando el acceso a la creación de arte y diseños únicos con facilidad."
+        video="/chat-video-imagen.webm"
+      />
+    </div>
+    <Code
+      title="Edición de imágenes con IA"
+      description="Canva integra inteligencia artificial para ayudar en la edición de imágenes, ofreciendo ajustes automáticos y personalizados que facilitan la creación de diseños atractivos con facilidad, haciéndolo accesible para usuarios sin experiencia en diseño."
+      video="/video-canva.webm"
+    />
+    <FooterBlanco />
   </section>
-  <FooterBlanco />
 </LayoutIa>
