@@ -1,3 +1,13 @@
+---
+interface Props {
+  title: string
+  description: string
+  video: string
+}
+
+const { title, description, video } = Astro.props
+---
+
 <section
   class="min-h-screen flex flex-col xl:flex-row justify-center px-5 gap-5 md:gap-10 xl:gap-5 pt-28 md:pt-0"
 >
@@ -7,21 +17,17 @@
     <h1
       class="text-3xl md:text-5xl geist-bold text-left lg:text-center xl:text-left text-white text-balance"
     >
-      ¡Subimos nuestro código a GitHub!
+      {title}
     </h1>
     <p class="text-left geist-semibold text-white text-pretty">
-      GitHub Copilot mejora la eficiencia al redactar mensajes de commit al
-      analizar los cambios en nuestro código y proporcionar mensajes apropiados,
-      agilizando así el proceso de documentación y facilitando una comunicación
-      clara y concisa sobre las modificaciones realizadas.
+      {description}
     </p>
   </div>
   <div
     class="mockup-code min-w-0 md:max-w-xl lg:max-w-3xl bg-gray-200 self-center"
   >
     <div class="flex justify-center items-center">
-      <video src="/videoCommits.webm" autoplay loop muted class="w-full h-auto"
-      ></video>
+      <video src={video} autoplay loop muted class="w-full h-auto"></video>
     </div>
   </div>
 </section>
